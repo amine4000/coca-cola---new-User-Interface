@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Coca Cola</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Amine" content="SitePoint">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<section>
+    <div  class="circle"></div>
+    <header>
+        <a href="#"><img  class="logo" src="./assets/logo.png" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">What's new</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="text-box">
+            <h2>Taste the feeling</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Harum veniam atque ullam inventore eius deleniti iusto fugiat natus saepe laborum.
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <a href="#">Learn More</a>
+
+        </div>
+        <div class="imgBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/cocacola1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/cocacola2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/cocacola3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/cocacola4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/cocacola5.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/cocacola6.png" alt=""></div>
+                </div>
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href=""><img src="./assets//facebook.png" alt=""></a></li>
+        <li><a href=""><img src="./assets//instagram.png" alt=""></a></li>
+        <li><a href=""><img src="./assets/twitter.png" alt=""></a></li>
+    </ul>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop:true
+    });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
