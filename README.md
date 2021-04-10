@@ -1,3 +1,3 @@
-Coca cola
+## Coca cola new UI
 
-![Preview](coca cola.PNG)
+![Preview](coca-cola.PNG)
